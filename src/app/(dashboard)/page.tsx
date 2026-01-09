@@ -1,4 +1,5 @@
 import MetricCard from "@/components/metric-card";
+import RevenueChart from "@/components/revenue-chart";
 
 const metrics = [
   {
@@ -38,6 +39,7 @@ export default function DashboardPage() {
           <MetricCard key={metric.title} {...metric} />
         ))}
       </div>
+      <RevenueChart />
     </section>
   );
 }
