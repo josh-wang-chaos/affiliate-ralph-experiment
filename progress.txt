@@ -2,3 +2,4 @@
 - DASH-002: added dashboard route-group layout with sidebar nav, header branding/user avatar placeholder, and responsive grid shell; moved root page into app/(dashboard)/page.tsx.
 - DASH-010: added MetricCard component and rendered Earnings/Clicks/Conversions cards with mock values and trend indicators on the dashboard.
 - DASH-020: installed Recharts and added revenue area chart with gradient fill, tooltip, and 7D/30D/90D period toggle using mock data.
+- DASH-030: added ActivityFeed component with mock activity items, icons, and relative timestamps.
