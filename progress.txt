@@ -1,2 +1,3 @@
 - DASH-001: scaffolded Next.js 16+ app with TypeScript and Tailwind, initialized shadcn/ui (globals + utils), installed lucide-react, and added base src/ folder structure.
 - DASH-002: added dashboard route-group layout with sidebar nav, header branding/user avatar placeholder, and responsive grid shell; moved root page into app/(dashboard)/page.tsx.
+- DASH-010: added MetricCard component and rendered Earnings/Clicks/Conversions cards with mock values and trend indicators on the dashboard.
