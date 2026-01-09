@@ -1,0 +1,98 @@
+{
+  "project": "affiliate-portal-v2",
+  "version": "0.1.0",
+  "scope": "mvp-dashboard-demo",
+  "features": [
+    {
+      "id": "DASH-001",
+      "category": "setup",
+      "description": "Next.js project with App Router and Tailwind",
+      "priority": 1,
+      "steps": [
+        "Create latest Next.js 16+ project with TypeScript",
+        "Set up Tailwind CSS with dark theme config",
+        "Install shadcn/ui and lucide-react",
+        "Create basic folder structure"
+      ],
+      "passes": false
+    },
+    {
+      "id": "DASH-002",
+      "category": "setup",
+      "description": "Dashboard layout shell (sidebar + header)",
+      "priority": 1,
+      "steps": [
+        "Create app/(dashboard)/layout.tsx",
+        "Build Sidebar with nav items and icons",
+        "Build Header with logo and user avatar placeholder",
+        "Implement responsive grid layout"
+      ],
+      "passes": false
+    },
+    {
+      "id": "DASH-010",
+      "category": "functional",
+      "description": "Metric cards with mock data",
+      "priority": 1,
+      "steps": [
+        "Create MetricCard component",
+        "Display Earnings, Clicks, Conversions cards",
+        "Show trend indicator (+/- %)",
+        "Use mock data for values"
+      ],
+      "passes": false
+    },
+    {
+      "id": "DASH-020",
+      "category": "functional",
+      "description": "Revenue chart with period selector",
+      "priority": 1,
+      "steps": [
+        "Install and configure Recharts",
+        "Create area chart with gradient fill",
+        "Add 7D/30D/90D period toggle",
+        "Show tooltip on hover"
+      ],
+      "passes": false
+    },
+    {
+      "id": "DASH-030",
+      "category": "functional",
+      "description": "Recent activity feed",
+      "priority": 2,
+      "steps": [
+        "Create ActivityFeed component",
+        "Render list with icon, description, time",
+        "Use mock activity data",
+        "Show relative timestamps"
+      ],
+      "passes": false
+    },
+    {
+      "id": "DASH-040",
+      "category": "visual",
+      "description": "Dark theme styling",
+      "priority": 1,
+      "steps": [
+        "Define CSS variables (slate-950 bg, emerald accent)",
+        "Style cards with subtle borders and shadows",
+        "Configure typography (heading/body sizes)",
+        "Apply consistent spacing scale"
+      ],
+      "passes": false
+    },
+    {
+      "id": "DASH-050",
+      "category": "responsive",
+      "description": "Mobile and desktop layouts",
+      "priority": 2,
+      "steps": [
+        "Stack cards on mobile, grid on desktop",
+        "Collapse sidebar to icons on tablet",
+        "Hide sidebar on mobile with hamburger menu",
+        "Make chart responsive"
+      ],
+      "passes": false
+    }
+  ]
+}
