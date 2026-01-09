@@ -4,3 +4,4 @@
 - DASH-020: installed Recharts and added revenue area chart with gradient fill, tooltip, and 7D/30D/90D period toggle using mock data.
 - DASH-030: added ActivityFeed component with mock activity items, icons, and relative timestamps.
 - DASH-040: set slate-950/emerald dark theme CSS variables, updated base typography styles, and defaulted the app to dark mode.
+- DASH-050: updated dashboard layout for responsive behavior with mobile sidebar toggle, tablet icon-only sidebar, and responsive grid adjustments.
