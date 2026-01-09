@@ -5,6 +5,9 @@ Dashboard demo for an affiliate program portal built with Next.js App Router and
 ## Ralph Loop Note
 This project was created by the Ralph Loop. The main work required is writing and refining the PRD, and the loop handles the implementation from there. Keep the PRD precise and iterate on it to drive changes.
 
+## Package Manager
+Use `pnpm` only in this repo.
+
 ## Features
 - Dark-mode dashboard shell with sidebar + header
 - Metric cards with trend indicators
@@ -14,8 +17,8 @@ This project was created by the Ralph Loop. The main work required is writing an
 
 ## Getting Started
 ```bash
-npm install
-npm run dev
+pnpm install
+pnpm dev
 ```
 
 Open `http://localhost:3000`.
