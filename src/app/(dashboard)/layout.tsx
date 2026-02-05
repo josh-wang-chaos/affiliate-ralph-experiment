@@ -2,6 +2,13 @@
 
 import { useState } from "react";
 import {
+  SignInButton,
+  SignUpButton,
+  SignedIn,
+  SignedOut,
+  UserButton,
+} from "@clerk/nextjs";
+import {
   BarChart3,
   LayoutDashboard,
   Link2,
@@ -136,9 +143,27 @@ export default function DashboardLayout({
               </div>
             </div>
             <div className="flex items-center gap-3">
-              <div className="flex h-11 w-11 items-center justify-center rounded-full border border-slate-700 bg-slate-900/70 text-slate-300">
-                <span className="text-sm font-semibold">JW</span>
-              </div>
+              <SignedOut>
+                <SignInButton mode="modal">
+                  <button className="relative z-10 cursor-pointer rounded-full bg-slate-100 px-4 py-2 text-sm font-medium text-slate-900 transition-all hover:scale-105 hover:bg-white hover:shadow-[0_0_20px_rgba(255,255,255,0.2)] active:scale-95">
+                    Sign In
+                  </button>
+                </SignInButton>
+                <SignUpButton mode="modal">
+                  <button className="relative z-10 cursor-pointer rounded-full border border-slate-700 bg-slate-900 px-4 py-2 text-sm font-medium text-slate-100 transition-all hover:scale-105 hover:border-emerald-500 hover:bg-slate-800 hover:text-emerald-400 hover:shadow-[0_0_20px_rgba(16,185,129,0.1)] active:scale-95">
+                    Sign Up
+                  </button>
+                </SignUpButton>
+              </SignedOut>
+              <SignedIn>
+                <UserButton
+                  appearance={{
+                    elements: {
+                      userButtonAvatarBox: "h-11 w-11",
+                    },
+                  }}
+                />
+              </SignedIn>
             </div>
           </header>
           <main className="flex-1 px-6 py-8">{children}</main>
