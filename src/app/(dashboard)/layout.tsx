@@ -54,7 +54,7 @@ export default function DashboardLayout({
                   <p className="text-xs uppercase tracking-[0.2em] text-emerald-200/80">
                     Affiliate
                   </p>
-                  <p className="text-lg font-semibold text-slate-100">Ralph</p>
+                  <p className="text-lg font-semibold text-slate-100">Affiliate</p>
                 </div>
               </div>
               <button

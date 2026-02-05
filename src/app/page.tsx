@@ -11,7 +11,7 @@ export default function LandingPage() {
           <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-emerald-500/20 text-emerald-400">
             <LayoutDashboard className="h-5 w-5" />
           </div>
-          <span className="text-xl font-bold tracking-tight text-white">Ralph</span>
+          <span className="text-xl font-bold tracking-tight text-white">Affiliate</span>
         </div>
         <div className="flex items-center gap-4">
           <SignedOut>
@@ -48,7 +48,7 @@ export default function LandingPage() {
             </div>
             
             <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
-              Scale your affiliate revenue with <span className="text-emerald-400">Ralph</span>
+              Scale your affiliate revenue with <span className="text-emerald-400">Affiliate</span>
             </h1>
             
             <p className="mt-6 text-lg leading-8 text-slate-400">
@@ -128,7 +128,7 @@ export default function LandingPage() {
       <footer className="border-t border-slate-800 bg-slate-950 py-12">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <p className="text-center text-xs leading-5 text-slate-500">
-            &copy; 2026 Affiliate Ralph Portal. All rights reserved.
+            &copy; 2026 Affiliate Portal. All rights reserved.
           </p>
         </div>
       </footer>
