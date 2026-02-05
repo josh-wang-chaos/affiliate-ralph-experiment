@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import {
   SignInButton,
   SignUpButton,
@@ -130,9 +131,9 @@ export default function DashboardLayout({
               >
                 <Menu className="h-4 w-4" />
               </button>
-              <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-emerald-500/20 text-emerald-300">
+              <Link href="/" className="flex h-11 w-11 items-center justify-center rounded-2xl bg-emerald-500/20 text-emerald-300 hover:bg-emerald-500/30 transition-colors">
                 <span className="text-sm font-semibold">AP</span>
-              </div>
+              </Link>
               <div>
                 <p className="text-xs uppercase tracking-[0.2em] text-slate-400">
                   Portal
