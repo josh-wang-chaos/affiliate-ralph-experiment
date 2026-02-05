@@ -45,3 +45,4 @@ affiliate-portal-v2/
 /.clerk/
 
 .pnpm-store/
+.env*.local
