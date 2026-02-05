@@ -102,7 +102,17 @@ export default function RevenueChart() {
                 color: "#e2e8f0",
               }}
               labelStyle={{ color: "#94a3b8" }}
-              formatter={(value: number) => [`$${value.toLocaleString()}`, ""]}
+              formatter={(value) => {
+                if (value === undefined || value === null) {
+                  return ["-", ""];
+                }
+                const numericValue =
+                  typeof value === "number" ? value : Number(value);
+                if (Number.isNaN(numericValue)) {
+                  return ["-", ""];
+                }
+                return [`$${numericValue.toLocaleString()}`, ""];
+              }}
             />
             <Area
               dataKey="revenue"
